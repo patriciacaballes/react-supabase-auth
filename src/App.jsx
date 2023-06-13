@@ -7,6 +7,8 @@ import Login from "./pages/Login";
 import PasswordReset from "./pages/PasswordReset";
 import Register from "./pages/Register";
 import UpdatePassword from "./pages/UpdatePassword";
+// import Create from "./pages/Create";
+import Update from "./pages/Update";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
             <Route element={<AuthRoute />}>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
+              {/* <Route path="/create" element={<Create />}/> */}
+              <Route path="/update" element={<Update/>}/>
             </Route>
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
